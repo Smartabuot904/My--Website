@@ -291,22 +291,7 @@ h2{
 let music = document.getElementById("bgmusic");
 let isPlaying = false;
 
-// 🔴 ENTER BUTTON CLICK FUNCTION
-function enterSite(){
-    document.getElementById("enterScreen").style.display = "none";
-    document.getElementById("mainContent").style.display = "block";
-
-    music.play().then(() => {
-        isPlaying = true;
-    }).catch(err => {
-        console.log("Autoplay blocked: ", err);
-    });
-
-    type();
-    createMatrixErrorRain();
-}
-
-// Click Sound
+  // Click Sound
 function playClick(){
   let c = document.getElementById("clickSound");
   c.currentTime = 0;
